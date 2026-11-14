@@ -16,4 +16,6 @@ class Ball {
     draw(){
 
     }
+
+    
 };
