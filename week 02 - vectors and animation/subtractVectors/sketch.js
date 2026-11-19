@@ -10,11 +10,12 @@ function setup() {
 ///////////////////////////////////////////////////
 function draw() {
   background(125);
-  var mouse = createVector(mouseX, mouseY);
-  var center = createVector(width / 2, height / 2);
-  mouse.sub(center);
+  strokeWeight(4);
 
-  translate(width / 2, height / 2);
-  strokeWeight(3);
+  mouse = new createVector(mouseX, mouseY);
+  center = new createVector(width/2, height/2);
+  translate(center.x, center.y);
+  
+  mouse.sub(center)
   line(0, 0, mouse.x, mouse.y);
-}
+};
