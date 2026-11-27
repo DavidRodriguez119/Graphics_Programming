@@ -22,12 +22,6 @@ class Ball {
         this.bounce();
     };
     draw(){
-<<<<<<< HEAD
-
-    }
-
-    
-=======
         fill(255);
         ellipse(this.locX, this.locY, 40, 40);
     };
@@ -43,5 +37,4 @@ class Ball {
             this.speedY *= -1;
         };
     };
->>>>>>> 95ffc62f2f3faaf3272de0da15df5517e5981fae
 };
