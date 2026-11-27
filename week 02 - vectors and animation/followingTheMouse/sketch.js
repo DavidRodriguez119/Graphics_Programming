@@ -37,6 +37,7 @@ class Ball {
   }
 
   move(){
+    //get mouse coordinates
     var mouse = createVector(mouseX, mouseY);
     var dir = p5.Vector.sub(mouse, this.location);
     dir.normalize();
